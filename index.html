@@ -87,44 +87,78 @@
 			</div>
 			<nav class="navigation">
 				<div class="nav-links">
-					<button>Univers</button>
-					<button>Marques</button>
+					<button>
+						Univers
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#344054"
+							class="chevron-down"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+							/>
+						</svg>
+					</button>
+					<button>
+						Marques
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#344054"
+							class="chevron-down"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+							/>
+						</svg>
+					</button>
 					<button>Agences</button>
 					<button>Contact</button>
 				</div>
 			</nav>
 		</header>
 		<div class="breadcrumbs">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="#667085"
-				class="home-icon"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-				/>
-			</svg>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="#667085"
-				class="chevron-right"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					d="M8.25 4.5l7.5 7.5-7.5 7.5"
-				/>
-			</svg>
+			<div class="breadcrumbs-container">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="#667085"
+					class="home-icon"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+					/>
+				</svg>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="#667085"
+					class="chevron-right"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M8.25 4.5l7.5 7.5-7.5 7.5"
+					/>
+				</svg>
 
-			<span class="breadcrumbs-text">Panier</span>
+				<span class="breadcrumbs-text">Panier</span>
+			</div>
 		</div>
 		<main class="container">
 			<div class="main-content">
@@ -136,20 +170,231 @@
 							<div class="product-img">
 								<img src="" alt="test" />
 							</div>
-							<div></div>
+							<div class="product-info">
+								<div class="product-details">
+									<h4 class="product-brand">Schneider Electric</h4>
+									<h5 class="product-title">
+										Mureva FIX - embase avec cheville pour collier
+										d'installation de largueur 9mm
+									</h5>
+									<div class="product-code">
+										<span class="product-code-subtitle"
+											>Code article :
+											<span class="product-code-detail">BAS2/0237</span></span
+										>
+									</div>
+									<span class="product-code">
+										<span class="product-code-subtitle"
+											>Code EAN13 :
+											<span class="product-code-detail"
+												>8434453001710</span
+											></span
+										>
+									</span>
+								</div>
+								<div class="product-actions">
+									<div class="quantity-input">
+										<button
+											class="decrease-quantity"
+											onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+										>
+											-
+										</button>
+										<input
+											type="number"
+											name="quantity"
+											min="1"
+											max="999"
+											value="100"
+											class="quantity"
+										/>
+										<button
+											class="increase-quantity"
+											onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+											class="plus"
+										>
+											+
+										</button>
+										<span class="product-total-price">1420,42</span>
+									</div>
+									<button class="product-remove">Retirer du panier</button>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="product-img">
+								<img src="" alt="test" />
+							</div>
+							<div class="product-info">
+								<div class="product-details">
+									<h4 class="product-brand">Schneider Electric</h4>
+									<h5 class="product-title">Rail RA35 3000 GS</h5>
+									<div class="product-code">
+										<span class="product-code-subtitle"
+											>Code article :
+											<span class="product-code-detail">BAS2/0237</span></span
+										>
+									</div>
+									<span class="product-code">
+										<span class="product-code-subtitle"
+											>Code EAN13 :
+											<span class="product-code-detail"
+												>8434453001710</span
+											></span
+										>
+									</span>
+								</div>
+								<div class="product-actions">
+									<div class="quantity-input">
+										<button
+											class="decrease-quantity"
+											onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+										>
+											-
+										</button>
+										<input
+											type="number"
+											name="quantity"
+											min="1"
+											max="999"
+											value="5"
+											class="quantity"
+										/>
+										<button
+											class="increase-quantity"
+											onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+											class="plus"
+										>
+											+
+										</button>
+										<span class="product-total-price">1420,42</span>
+									</div>
+									<button class="product-remove">Retirer du panier</button>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="product-img">
+								<img src="" alt="test" />
+							</div>
+							<div class="product-info">
+								<div class="product-details">
+									<h4 class="product-brand">Schneider Electric</h4>
+									<h5 class="product-title">
+										Portier audio 2 fils intégral, saillie Façade alu. avec 2ème
+									</h5>
+									<div class="product-code">
+										<span class="product-code-subtitle"
+											>Code article :
+											<span class="product-code-detail">BAS2/0237</span></span
+										>
+									</div>
+									<span class="product-code">
+										<span class="product-code-subtitle"
+											>Code EAN13 :
+											<span class="product-code-detail"
+												>8434453001710</span
+											></span
+										>
+									</span>
+								</div>
+								<div class="product-actions">
+									<div class="quantity-input">
+										<button
+											class="decrease-quantity"
+											onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+										>
+											-
+										</button>
+										<input
+											type="number"
+											name="quantity"
+											min="1"
+											max="999"
+											value="1"
+											class="quantity"
+										/>
+										<button
+											class="increase-quantity"
+											onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+											class="plus"
+										>
+											+
+										</button>
+										<span class="product-total-price">1420,42</span>
+									</div>
+									<button class="product-remove">Retirer du panier</button>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="basket-details"></div>
-					<button>Valider le panier</button>
+					<div class="basket-details">
+						<div class="basket-coupon">
+							<span>D3E</span>
+							<span>150 €</span>
+						</div>
+						<div class="basket-total">
+							<span>Total</span>
+							<span>852,40 € HT</span>
+						</div>
+					</div>
+					<button class="basket-validate">Finaliser la commande</button>
 				</div>
 			</div>
-			<div class="about">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
 		</main>
-		<footer></footer>
+		<div class="bottom-page">
+			<div class="container">
+				<div class="about">
+					<div class="about-col">
+						<span class="about-number">4</span>
+						<span class="about-text">Agences</span>
+					</div>
+					<div class="about-col">
+						<span class="about-number">10</span>
+						<span class="about-text">Collaborateurs</span>
+					</div>
+					<div class="about-col">
+						<span class="about-number">200</span>
+						<span class="about-text">Marques</span>
+					</div>
+					<div class="about-col">
+						<span class="about-number">500 000</span>
+						<span class="about-text">Références</span>
+					</div>
+				</div>
+				<footer>
+					<div class="links">
+						<img class="logo" src="logo_ca2e.png" alt="Ca2e" />
+						<div class="links-col">
+							<h5 class="links-title">Navigation</h5>
+							<a href="#">Accueil</a>
+							<a href="#">Actualités</a>
+							<a href="#">Les agences</a>
+							<a href="#">Contact</a>
+						</div>
+						<div class="links-col">
+							<h5 class="links-title">Liens utiles</h5>
+							<a href="#">Conditions générales de vente</a>
+							<a href="#">Mentions légales</a>
+						</div>
+						<div class="newsletter">
+							<h5 class="links-title">Abonnez-vous à notre newsletter</h5>
+							<p class="newsletter-text">
+								Les dernières nouvelles, articles et ressources, envoyés chaque
+								semaine dans votre boîte de réception.
+							</p>
+							<form class="newsletter-form">
+								<input type="text" placeholder="Entrez votre email" required />
+								<button type="submit">Envoyer</button>
+							</form>
+						</div>
+					</div>
+					<div class="bottom-footer">
+						<span class="copyright">© 2023 WebexpR</span>
+						<div class="social-icons"></div>
+					</div>
+				</footer>
+			</div>
+		</div>
 	</body>
 </html>
